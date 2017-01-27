@@ -218,6 +218,48 @@ public class Picture extends SimplePicture
     }
   }
   
+  public void fullRandom()
+  {
+	  Pixel [][] currentPicture = this.getPixels2D();
+	  for (Pixel [] row : currentPicture)
+	  {
+		  for (Pixel currentPixel : row)
+		  {
+			  int red = (int) (Math.random() * 256);
+			  int green = (int) (Math.random() * 256);
+			  int blue = (int) (Math.random() * 256);
+			  
+			  currentPixel.setColor(new Color(red, green, blue));
+		  }
+	  }
+  }
+  
+	 public void glitchArt(Picture fromPic, 
+             int startRow, int startCol)
+{
+Pixel fromPixel = null;
+Pixel toPixel = null;
+Pixel[][] toPixels = this.getPixels2D();
+Pixel[][] fromPixels = fromPic.getPixels2D();
+for (int fromRow = 0, toRow = startRow; 
+     fromRow < fromPixels.length &&
+     toRow < toPixels.length; 
+     fromRow++, toRow++)
+{
+  for (int fromCol = 0, toCol = startCol; 
+       fromCol < fromPixels[0].length &&
+       toCol < toPixels[0].length;  
+       fromCol++, toCol++)
+  {
+    fromPixel = fromPixels[fromRow][fromCol];
+    toPixel = toPixels[toRow][toCol];
+    toPixel.setColor(fromPixel.getColor());
+  }
+}   
+
+	
+}
+  
   
   /* Main method for testing - each class in Java can have a main 
    * method 

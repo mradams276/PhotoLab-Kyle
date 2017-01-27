@@ -35,6 +35,16 @@ public class PictureTester
     caterpillar.explore();
   }
   
+  public static void testCopy()
+  {
+	  Picture copy = new Picture("caterpillar.jpg");
+	  copy.explore();
+	  copy.copy();
+	  copy.explore();
+	  
+	  
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -55,10 +65,29 @@ public class PictureTester
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
   {
-    Picture swan = new Picture("swan.jpg");
+    Picture swan = new Picture("caterpillar.jpg");
+//    Picture other = new Picture("barbaraS.jpg");
     swan.edgeDetection(10);
+//    swan.copy(other, 30, 10);
     swan.explore();
   }
+  
+  public static void testRandomize()
+  {
+	  Picture randomized = new Picture("barbaraS.jpg");
+	  randomized.explore();
+	  randomized.fullRandom();
+	  randomized.explore();
+	  
+  }
+  
+  public static void glitchArt()
+  {
+	  Picture glitch = new Picture("barbaraS.jpg");
+	  
+  }
+  
+  
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -67,21 +96,22 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-//    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
+	//testRandomize();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-//    testMirrorVertical();
-    testMirrorTemple();
-    testWaterBlue();
+	//testMirrorVertical();
+    //testMirrorTemple();
+    //testWaterBlue();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    //testCopy();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
