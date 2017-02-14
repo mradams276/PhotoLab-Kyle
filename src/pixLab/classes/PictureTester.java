@@ -39,7 +39,7 @@ public class PictureTester
   {
 	  Picture copy = new Picture("caterpillar.jpg");
 	  copy.explore();
-	  copy.copy();
+	  //copy.copy();
 	  copy.explore();
 	  
 	  
@@ -87,6 +87,12 @@ public class PictureTester
 	  
   }
   
+  public static void testValentinesMeme()
+  {
+	  Picture ani = new Picture("AnakinSkywalker.png");
+	  ani.memeIt();
+	  ani.explore();
+  }
   
   
   /** Main method for testing.  Every class can have a main
@@ -111,7 +117,7 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    testCopy();
+    //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
@@ -120,5 +126,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	  testValentinesMeme();
   }
 }

@@ -89,14 +89,14 @@ public class Picture extends SimplePicture
   /** Method to set the blue to 0 */
   public void zeroBlue()
   {
-    Pixel[][] pixels = this.getPixels2D();
-    for (Pixel[] rowArray : pixels)
-    {
-      for (Pixel pixelObj : rowArray)
-      {
-        pixelObj.setBlue(0);
-      }
-    }
+	  Pixel[][] pixels = this.getPixels2D();
+	    for (Pixel[] rowArray : pixels)
+	    {
+	      for (Pixel pixelObj : rowArray)
+	      {
+	        pixelObj.setBlue(0);
+	      }
+	    }
   }
   
   /** Method that mirrors the picture around a 
@@ -234,7 +234,7 @@ public class Picture extends SimplePicture
 	  }
   }
   
-	 public void glitchArt(Picture fromPic, 
+public void glitchArt(Picture fromPic, 
              int startRow, int startCol)
 {
 Pixel fromPixel = null;
@@ -254,11 +254,27 @@ for (int fromRow = 0, toRow = startRow;
     fromPixel = fromPixels[fromRow][fromCol];
     toPixel = toPixels[toRow][toCol];
     toPixel.setColor(fromPixel.getColor());
-  }
-}   
-
-	
+  	}
+  }   	
 }
+	 
+public void memeIt()
+{
+	 Pixel[][] pixels = this.getPixels2D();
+	    for (Pixel[] rowArray : pixels)
+	    {
+	      for (Pixel pixelObj : rowArray)
+	      {
+	        pixelObj.setBlue(0);
+	        pixelObj.setGreen(0);
+	        
+	      }
+	    }
+	addMessage("I love you like I love sand",165,40);
+	addMessage("NOT VERY MUCH",215,460);
+	write("AnakinMemefied.png");
+}
+	 
   
   
   /* Main method for testing - each class in Java can have a main 
