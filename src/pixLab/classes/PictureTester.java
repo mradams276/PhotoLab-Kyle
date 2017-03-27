@@ -75,8 +75,27 @@ public class PictureTester {
 
 	}
 
-	public static void glitchArt() {
-		Picture glitch = new Picture("barbaraS.jpg");
+	public static void testGlitchArt() {
+		Picture glitch = new Picture("MrChief.jpg");
+		glitch.chosenCopy(glitch, 10, 10);
+		glitch.chosenCopy(glitch, 50, 31);
+		glitch.chosenCopy(glitch, 200, 252);
+		glitch.chosenCopy(glitch, 90, 5);
+		glitch.chosenCopy(glitch, 300, 620);
+		glitch.chosenCopy(glitch, 45, 527);
+		glitch.chosenCopy(glitch, 63, 95);
+		glitch.chosenCopy(glitch, 57, 46);
+		glitch.chosenCopy(glitch, 93, 44);
+		glitch.chosenCopy(glitch, 251, 80);
+		glitch.chosenCopy(glitch, 511, 177);
+		glitch.chosenCopy(glitch, 625, 200);
+		glitch.chosenCopy(glitch, 557, 755);
+		glitch.chosenCopy(glitch, 40, 40);
+		glitch.chosenCopy(glitch, 45, 60);
+		glitch.chosenCopy(glitch, 25, 10);
+		glitch.chosenCopy(glitch, 94, 166);
+		glitch.chosenCopy(glitch, 376, 492);
+		glitch.explore();
 
 	}
 
@@ -152,6 +171,7 @@ public class PictureTester {
 		// testFiveFilterPhoto();
 		// testEdgeDetection();
 		 		testEdgeDetection2();
+		// testGlitchArt();
 		// testChromakey();
 		// testEncodeAndDecode();
 		// testGetCountRedOverValue(250);

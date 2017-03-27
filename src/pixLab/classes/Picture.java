@@ -216,6 +216,8 @@ public class Picture extends SimplePicture {
 	}
 
 	public void glitchArt() {
+		
+		
 
 	}
 
@@ -317,10 +319,6 @@ public class Picture extends SimplePicture {
 				}
 			}
 		}
-	}
-	
-	public void mirorArms() {
-		
 	}
 
 	public static void main(String[] args) {
