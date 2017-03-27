@@ -119,12 +119,9 @@ public class PictureTester {
 		Picture Anakin = new Picture("AnakinSkywalker.png");
 		Anakin.createCollage();
 		Anakin.edgeDetection2(10);
-		
 		Anakin.zeroBlue();
-		
 		Anakin.mirrorVertical();
 		Anakin.chosenCopy(Anakin, 10, 200);
-		
 		Anakin.explore();
 		
 	}
@@ -147,14 +144,14 @@ public class PictureTester {
 		// testMirrorTemple();
 		// testWaterBlue();
 		// testMirrorArms();
-		 		//testMirrorGull();
+		 		testMirrorGull();
 		//testMirrorDiagonal();
-		 		//testCollage();
-		 		//testChosenCopy();
-		 		//testMirrorArms();
-		 testFiveFilterPhoto();
+		 		testCollage();
+		 		testChosenCopy();
+		 		testMirrorArms();
+		// testFiveFilterPhoto();
 		// testEdgeDetection();
-		 		//testEdgeDetection2();
+		 		testEdgeDetection2();
 		// testChromakey();
 		// testEncodeAndDecode();
 		// testGetCountRedOverValue(250);
