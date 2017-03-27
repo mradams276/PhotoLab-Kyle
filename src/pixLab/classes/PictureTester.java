@@ -113,6 +113,21 @@ public class PictureTester {
 		arms.mirrorVertical();
 		arms.explore();
 	}
+	
+	public static void testFiveFilterPhoto()
+	{
+		Picture Anakin = new Picture("AnakinSkywalker.png");
+		Anakin.createCollage();
+		Anakin.edgeDetection2(10);
+		
+		Anakin.zeroBlue();
+		
+		Anakin.mirrorVertical();
+		Anakin.chosenCopy(Anakin, 10, 200);
+		
+		Anakin.explore();
+		
+	}
 	/**
 	 * Main method for testing. Every class can have a main method in Java
 	 */
@@ -132,13 +147,14 @@ public class PictureTester {
 		// testMirrorTemple();
 		// testWaterBlue();
 		// testMirrorArms();
-		 testMirrorGull();
-		// testMirrorDiagonal();
-		 testCollage();
-		 testChosenCopy();
-		 testMirrorArms();
+		 		//testMirrorGull();
+		//testMirrorDiagonal();
+		 		//testCollage();
+		 		//testChosenCopy();
+		 		//testMirrorArms();
+		 testFiveFilterPhoto();
 		// testEdgeDetection();
-		 testEdgeDetection2();
+		 		//testEdgeDetection2();
 		// testChromakey();
 		// testEncodeAndDecode();
 		// testGetCountRedOverValue(250);
