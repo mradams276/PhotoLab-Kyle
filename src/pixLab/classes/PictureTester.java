@@ -25,8 +25,6 @@ public class PictureTester {
 		water.explore();
 	}
 
-
-
 	/** Method to test mirrorVertical */
 	public static void testMirrorVertical() {
 		Picture caterpillar = new Picture("caterpillar.jpg");
@@ -104,37 +102,32 @@ public class PictureTester {
 		ani.memeIt();
 		ani.explore();
 	}
-	
-	public static void testEdgeDetection2()
-	{
+
+	public static void testEdgeDetection2() {
 		Picture swan = new Picture("swan.jpg");
 		swan.edgeDetection2(10);
 		swan.explore();
 	}
 
-	public static void testChosenCopy()
-	{
-		Picture motorcycle = new Picture ("blueMotorcycle.jpg");
+	public static void testChosenCopy() {
+		Picture motorcycle = new Picture("blueMotorcycle.jpg");
 		motorcycle.chosenCopy(motorcycle, 30, 89);
 		motorcycle.explore();
 	}
 
-	public static void testMirrorGull()
-	{
+	public static void testMirrorGull() {
 		Picture seagull = new Picture("seagull.jpg");
 		seagull.mirrorGull();
 		seagull.explore();
 	}
-	
-	public static void testMirrorArms()
-	{
+
+	public static void testMirrorArms() {
 		Picture arms = new Picture("Arms.png");
 		arms.mirrorVertical();
 		arms.explore();
 	}
-	
-	public static void testFiveFilterPhoto()
-	{
+
+	public static void testFiveFilterPhoto() {
 		Picture Anakin = new Picture("AnakinSkywalker.png");
 		Anakin.createCollage();
 		Anakin.edgeDetection2(10);
@@ -142,8 +135,19 @@ public class PictureTester {
 		Anakin.mirrorVertical();
 		Anakin.chosenCopy(Anakin, 10, 200);
 		Anakin.explore();
-		
+
 	}
+
+	public static void testSteganography() {
+		Picture source = new Picture("");
+		Picture hidden = new Picture("");
+		source.encode(hidden);
+		;
+		source.explore();
+		hidden.explore();
+		source.decode();
+	}
+
 	/**
 	 * Main method for testing. Every class can have a main method in Java
 	 */
@@ -163,14 +167,15 @@ public class PictureTester {
 		// testMirrorTemple();
 		// testWaterBlue();
 		// testMirrorArms();
-		 		testMirrorGull();
-		//testMirrorDiagonal();
-		 		testCollage();
-		 		testChosenCopy();
-		 		testMirrorArms();
+		testMirrorGull();
+		// testMirrorDiagonal();
+		testCollage();
+		testChosenCopy();
+		testMirrorArms();
 		// testFiveFilterPhoto();
 		// testEdgeDetection();
-		 		testEdgeDetection2();
+		testEdgeDetection2();
+		testSteganography();
 		// testGlitchArt();
 		// testChromakey();
 		// testEncodeAndDecode();
